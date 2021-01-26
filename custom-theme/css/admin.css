@@ -1,0 +1,101 @@
+.vtabs {
+	border: 1px solid #FFFFFF;
+	margin: 10px 0 0;
+	position: relative;
+}
+
+.vtabs .vtabs-tab-column {
+	position: absolute;
+	left: 0;
+	margin: 0;
+	width: 140px;
+	min-width: 140px;
+}
+
+.vtabs .vtabs-tab-column ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.vtabs .vtabs-tab-column ul li.open, .vtabs .vtabs-tab-column ul li.closed {
+	background-color: #ffffff;
+	margin: 0 0 3px;
+	min-height: 20px;
+	padding: 4px 5px 1px 7px;
+	z-index: 10;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	border-left: 1px solid #999999;
+	cursor: pointer;
+}
+
+.vtabs .vtabs-tab-column ul li.closed {
+	background-color: #bbbbbb;
+	border-right: 1px solid #777777;
+	background-image: url('../images/ClosedTabBackground.png');
+	background-repeat: repeat-x;
+}
+
+.vtabs .vtabs-tab-column ul li: hover {
+	cursor: pointer;
+}
+
+.vtabs .vtabs-tab-column ul li a.open, .vtabs .vtabs-tab-column ul li a.closed {
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+
+.vtabs .vtabs-content-column {
+	padding: 0px;
+	margin: 0px;
+}
+
+.vtabs .vtabs-content-column .vtabs-content-panel {
+	background-color: #ffffff;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin: 0px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	border-right: 1px solid #999999;
+	border-left: 1px solid #999999;
+}
+
+.vtabs-content-panel textarea, .wp-insert textarea {
+	width: 100%;
+	height: 250px;
+}
+
+.vtabs-content-panel p {
+	margin: 5px 0 15px !important;
+}
+
+.chosen-container-multi .chosen-choices li.search-field {
+    background: #efefef none repeat scroll 0 0;
+    border: 1px solid #999;
+    clear: both;
+    display: block;
+    float: none;
+    margin: 2px 2px 3px 0 !important;
+    width: 100%;
+}
+
+.chosen-container-multi .chosen-choices li.search-field input {
+    padding: 5px !important;
+    width: 100% !important;
+}

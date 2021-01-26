@@ -1,0 +1,91 @@
+/*--- Custom CSS ---*/
+
+/* --header */
+header {-webkit-transition: 500ms all;transition: 500ms all;background: #242424;background: -webkit-gradient(linear, left top, left bottom, from(#242424),to(#000000));background: linear-gradient(to bottom, #242424 0%,#000000 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242424', endColorstr='#000000',GradientType=0 );border-bottom: 5px solid #e2b30d;top: -10%;}
+header.sticky {top: 0;z-index: 99;position: fixed;width: 100%;left: 0;right: 0;-webkit-transition: 500ms all;transition: 500ms all;}
+.navMain nav ul li {display: inline-block;line-height: 30px;position: relative;-webkit-transition: 300ms all;transition: 300ms all;}
+.logoMain {float: left;padding-top: 26px;}
+.navMain {float: right;}
+.navMain nav ul li a {color: #fff;text-transform: uppercase;position: relative;font-weight: 600;font-size: 17px;z-index: 9;display: block; padding: 25px 40px;}
+.navMain nav ul li a:before {content: "";height: 13px;width: 5px;background: #e2b30d;position: absolute;top: 50%;left: 23px;-webkit-transform: skew(-25deg);transform: skew(-25deg);margin-top: -6px;}
+.navMain nav ul li:before, .navMain nav ul li:last-child:after {content: "";background: #404040;width: 1px;position: absolute;top: 0;-webkit-transform: skew(-25deg);transform: skew(-25deg);height:100%;}
+.navMain nav ul li:last-child:after {right: 0;}
+.navMain nav ul li:before{left: 0;}
+.navMain nav ul li:after{height: 0}
+.navMain nav ul li a:hover:after {background: #e2b30d;content: "";height: 100%;width: 102%;left: 0;position: absolute;top: 0;-webkit-transform: skew(-25deg);transform: skew(-25deg);right: 0;z-index: -1;    }
+.navMain nav ul li a:hover{color: #000;}
+.navMain nav ul li a:hover:before{background: #000;}
+
+/* --mypro */
+.startPro:before, .startProBottom:before{position: absolute;height: 100%;width: 100%;background: rgba(0, 0, 0, 0.8);content: "";top: 0;}
+.startProBottom.parallax-window {min-height: 760px;background: transparent;position: relative;}
+.parallax-window {background: transparent;}
+.startPro.myAgesteps{min-height:70vh;min-height:-ms-calc(100vh - 165px);min-height:-o-calc(100vh - 165px);min-height:calc(100vh - 165px);}
+.innerPro {position: absolute;margin: 0 auto;text-align: center;color: #fff;top: inherit;left: 0;right: 0;bottom: 200px;}
+.startProBottom .innerPro {bottom: inherit;top: 50%;-webkit-transform: translateY(-50%);transform: translateY(-50%);}
+.startPro {position: relative;padding-bottom: 120px;min-height: calc(100vh - 85px);}
+.startPro:after{content: "";background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)),color-stop(95%, rgba(0,0,0,1)),to(rgba(0,0,0,1)));background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 95%,rgba(0,0,0,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );position:absolute; bottom: 0; height: 200px; width: 100%;}
+.startPro.myAgesteps .innerPro {position: relative;margin: 100px auto 40px;text-align: center;color: #fff;bottom: 0;}
+.innerPro h2 {font-size: 90px;text-transform: uppercase;font-weight: 100;line-height: 90px;margin-bottom: 50px;}
+.innerPro h2 span{font-weight: 600;}
+.btnMain {border: 2px solid #fff;border-radius: 5px;padding: 14px 0;display: inline-block;font-size: 25px;color: #e2b30d;text-transform: uppercase;font-weight: 600;width: 210px;margin: 0 40px;}
+.btnMain:hover{background:#e2b30d;color:#fff;border: 2px solid #e2b30d;}
+
+
+/* --mystory */
+.myStore {background: #232323;padding: 64px 0;}
+.imgStory {border: 3px solid #000;border-radius: 9px;overflow: hidden;}
+.myStore .row{padding-bottom: 82px;}
+.myStore .row:last-child{padding-bottom: 0}
+.delStory ul li h2 {font-size: 50px;font-weight: 600;color: #e2b30d;}
+.delStory li span {text-transform: uppercase;font-size: 39px;font-weight: 400;position: relative;}
+.desigStory {margin-right: 13px;}
+.ageStory:after {content: "";position: absolute;background: red;width: 9px;height: 9px;top: 50%;left: -16px;margin-top: -4.4px;background: #787677;border-radius: 50%;}
+.delStory ul{padding-bottom: 10px;}
+.mystTag {display: inline-block;background: #000;text-transform: uppercase;padding: 10px 12px;font-weight: 600;margin-bottom: 7px;}
+.imgStory img {width: 100%;margin-right: 0;}
+.authorName {display: block;padding-top: 20px;}
+.delStory p{font-weight: 100;}
+.delStory {color: #fff;margin-left: 25px;}
+.myStore .row:nth-child(2n) .delStory {margin-left: 0;margin-right: 25px;}
+
+
+/* --its your time */
+.itsTime .row{margin: 0;}
+.itsTime {border-bottom: 5px solid #e2b30d;}
+.itsTime .container-fluid, .itsTime .col-md-3{padding: 0;}
+.pixItem img{width: 100%;}
+.pixItem{cursor: pointer;}
+.pixItem:hover{opacity: 0.8;}
+.timePix {border-top: 5px solid #e2b30d;}
+.titleMain span {font-weight: 600;}
+.titleMain {text-align: center;font-weight: 100;font-size: 70px; text-transform: uppercase;padding: 40px 0;line-height: 70px;}
+
+/* --footer */
+
+footer{/*position: absolute;bottom: 0;right: 0;left: 0;*/width: 100%;background: #242424;background: -webkit-gradient(linear, left top, left bottom, from(#242424),to(#000000));background: linear-gradient(to bottom, #242424 0%,#000000 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242424', endColorstr='#000000',GradientType=0 );}
+    
+
+/* --step progess */
+.processSteps {position: relative;z-index: 2;background: #e1b30d;padding: 23px 0;text-transform: uppercase;}
+.processSteps li {font-size: 34px;font-weight: 500;line-height: 34px;display: table-cell;width: 1%;}
+.processSteps ul li.active span{color: #000;}
+.processSteps ul li.active span:after{background: url(../img/label-white.png);}
+.processSteps ul li span {font-size: 23px;position: relative;top: -3px;font-weight: 600;width: 30px;display: inline-block;z-index: 99;text-align: center;margin-right: 8px;color: #fff;line-height: 34px;}
+.processSteps ul li span:after {content: "";background: url(../img/label-black.png);width: 30px;height: 35px;position: absolute;top: 0;left: 0;z-index: -1;}
+.processSteps ul {text-align: center;}
+
+
+.innerPro ul li {font-size: 25px;font-weight: 600;color: #e1b30d;border: 2px solid #fff;border-radius: 9px;padding: 20px 30px;text-transform: uppercase;display: inline-block;margin: 0 20px 46px;cursor: pointer;-webkit-transition: 300ms all;transition: 300ms all;}
+.innerPro ul.ageRange li {padding: 15px 0;width: 210px;margin: 0 26px 46px;}
+.innerPro ul {max-width: 790px;margin: 0 auto;}
+.innerPro ul li:hover, .innerPro ul li.active {background: #e1b30d;color: #000;border: 2px solid #e1b30d;}
+.innerPro .bodyType li {width: 43%;}
+
+
+
+
+
+
+

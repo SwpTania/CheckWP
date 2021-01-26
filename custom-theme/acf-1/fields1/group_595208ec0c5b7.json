@@ -1,0 +1,264 @@
+{
+    "key": "group_595208ec0c5b7",
+    "title": "Coupon Setting",
+    "fields": [
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_5952273b16e18",
+            "label": "Coupon Code",
+            "name": "coupon_code",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": "generate_code"
+            }
+        },
+        {
+            "message": "",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_59521502121e5",
+            "label": "Settings",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "single": "Single use only",
+                "multiple": "Multiple use"
+            },
+            "default_value": "",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_595215390e58f",
+            "label": "Single\/Multiple Use",
+            "name": "singlemultipal",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "price": "Price Discount",
+                "percentage": "Percentage Discount"
+            },
+            "default_value": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_5952090cc158d",
+            "label": "Coupon Type",
+            "name": "coupon_type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "$",
+            "append": "",
+            "key": "field_59520989deec4",
+            "label": "Discounted Price",
+            "name": "discounted_price",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5952090cc158d",
+                        "operator": "==",
+                        "value": "price"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": "%",
+            "key": "field_595209b80078c",
+            "label": "Discount Percentage",
+            "name": "discount_percentage",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5952090cc158d",
+                        "operator": "==",
+                        "value": "percentage"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": 0,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_59520a8062ecb",
+            "label": "This is for a specific Plan",
+            "name": "specific_plan",
+            "type": "true_false",
+            "instructions": "check this box to Apply discount on Specific plans",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "post_type": [
+                "plans"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "id",
+            "ui": 1,
+            "key": "field_59520a17c4e7d",
+            "label": "For Plan",
+            "name": "for_plan",
+            "type": "post_object",
+            "instructions": "Choose Plans for apply Coupon (You can choose multipal Plans)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59520a8062ecb",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_59520bbd42f97",
+            "label": "Coupon Date",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "display_format": "d\/m\/Y g:i a",
+            "return_format": "Y-m-d H:i:s",
+            "first_day": 1,
+            "key": "field_59520bd942f98",
+            "label": "Start Date\/Time",
+            "name": "start_date",
+            "type": "date_time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "display_format": "d\/m\/Y g:i a",
+            "return_format": "Y-m-d H:i:s",
+            "first_day": 1,
+            "key": "field_59520cba42f99",
+            "label": "End Date\/Time",
+            "name": "end_date",
+            "type": "date_time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "coupans"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1499686566
+}

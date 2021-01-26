@@ -1,0 +1,148 @@
+<?php
+include_once( get_template_directory() . '/acf/inc.php' );
+include_once( get_template_directory() . '/functions/inc.php' );
+
+add_action('after_setup_theme', 'motors_setup');
+
+function motors_setup() {
+    load_theme_textdomain('motors', get_template_directory() . '/languages');
+    add_theme_support('title-tag');
+    add_theme_support('automatic-feed-links');
+    add_theme_support('html5', array('search-form', 'comment-form', 'comment-list', 'gallery', 'caption'));
+    register_nav_menu('primary', __('Header Menu', 'motors'));
+    register_nav_menu('footer', __('Footer Menu', 'motors'));
+    register_nav_menu('mobile', __('Mobile Menu', 'motors'));
+    add_theme_support('post-thumbnails');
+    set_post_thumbnail_size(560, 200, true);
+    add_image_size('service_thumb', 300, 285, true);
+    add_filter('use_default_gallery_style', '__return_false');
+    //add_theme_support('customize-selective-refresh-widgets');
+}
+
+add_action('wp_enqueue_scripts', 'motors_scripts_styles');
+
+function motors_scripts_styles() {
+    $asst_url = get_template_directory_uri() . '/assets/';
+    $js_url = $asst_url . 'js/';
+    // $css_url = $asst_url . 'css/';
+    
+    wp_enqueue_script('viewport.min', $js_url . 'viewport.js', array('jquery'), '1.0', true);
+    wp_enqueue_script('ouibounce', $js_url . 'ouibounce.js', array('jquery'), '1.0');
+    wp_enqueue_script('vimeo.min', $js_url . 'vimeo.js', array('jquery'), '1.0', true);
+    wp_enqueue_script('jquery-validation', '//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js', array('jquery'), '1.0', true);
+}
+
+
+add_action('admin_enqueue_scripts', 'monawar_enque_script');
+
+function monawar_enque_script() {
+    wp_enqueue_style('data_table_css', get_template_directory_uri() . '/assets/css/data_table.css');
+    wp_enqueue_script('jquery.validate.min', get_template_directory_uri() . '/assets/js/jquery.validate.min.js', array('jquery'));
+    wp_enqueue_script('data_table_js', get_template_directory_uri() . '/assets/js/data_table.js', array('jquery'));
+}
+
+add_action('widgets_init', 'motors_widgets_init');
+
+function motors_widgets_init() {
+    register_sidebar(array(
+        'name' => __('Main Widget Area', 'twentythirteen'),
+        'id' => 'sidebar-1',
+        'description' => __('Appears in the footer section of the site.', 'twentythirteen'),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ));
+
+    register_sidebar(array(
+        'name' => __('Secondary Widget Area', 'twentythirteen'),
+        'id' => 'sidebar-2',
+        'description' => __('Appears on posts and pages in the sidebar.', 'twentythirteen'),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ));
+    register_sidebar(array(
+        'name' => __('Footer Widget Area', 'twentythirteen'),
+        'id' => 'sidebar-3',
+        'description' => __('Appears on footer in the sidebar.', 'twentythirteen'),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<div class="widget-title"><h6>',
+        'after_title' => '</h6></div>',
+    ));
+}
+
+add_action('wp_head', 'monawar_ajaxurl');
+
+function monawar_ajaxurl() {
+    ?>
+    <script type="text/javascript">
+        var ajaxUrl = '<?php echo esc_url(admin_url('admin-ajax.php')); ?>';
+        var siteUrl = '<?php echo get_site_url(); ?>';
+        var templateUir = '<?php echo get_template_directory_uri(); ?>';
+    </script>
+    <?php
+}
+
+/*************************Function for Coupon Code *********************************/
+
+function rand_code($len)
+{
+     $min_lenght= 0;
+     $max_lenght = 100;
+     $bigL = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+     $smallL = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+     $number = "0123456789";
+     $bigB = str_shuffle($bigL);
+     $smallS = str_shuffle($smallL);
+     $numberS = str_shuffle($number);
+     $subA = substr($bigB,0,5);
+     $subB = substr($bigB,6,5);
+     $subC = substr($bigB,10,5);
+     $subD = substr($smallS,0,5);
+     $subE = substr($smallS,6,5);
+     $subF = substr($smallS,10,5);
+     $subG = substr($numberS,0,5);
+     $subH = substr($numberS,6,5);
+     $subI = substr($numberS,10,5);
+     $RandCode1 = str_shuffle($subA.$subD.$subB.$subF.$subC.$subE);
+     $RandCode2 = str_shuffle($RandCode1);
+     $RandCode = $RandCode1.$RandCode2;
+         if ($len>$min_lenght && $len<$max_lenght)
+         {
+         $CodeEX = substr($RandCode,0,$len);
+         }
+         else
+         {
+         $CodeEX = $RandCode;
+         }
+         global $wpdb;
+        $sql="select * from wp_postmeta where meta_value='".$CodeEX."' and meta_key='coupon_code'";
+        $results=$wpdb->get_results($sql);
+                  if (empty($results)) {
+                     return $CodeEX;
+                  }else{
+                     rand_code(10);
+                  }
+   }
+
+add_action('admin_footer','acf_generate_coupon_code');
+function acf_generate_coupon_code()
+{
+  $coupon_code= rand_code(10);
+?>
+<script type="text/javascript">
+    jQuery(document).ready(function(){
+          var get_coupon_code =jQuery("#generate_code").find("input").val();
+          if(get_coupon_code=="")
+          {
+            jQuery("#generate_code").find("input").val('<?php echo  $coupon_code;?>');
+          }
+    });
+</script>
+<?php
+}
+
+/****************************************************************************************/

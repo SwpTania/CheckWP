@@ -1,0 +1,77 @@
+{
+    "key": "group_5a4f62e6c9a3f",
+    "title": "Exit Popup",
+    "fields": [
+        {
+            "layout": "vertical",
+            "choices": {
+                "NO": "NO",
+                "YES": "YES"
+            },
+            "default_value": "",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_5a4f62f4dbb35",
+            "label": "Is this exit popup mail template",
+            "name": "exit_popup_mail_template",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_5a4f647ddbb36",
+            "label": "Number of days delay after previous email",
+            "name": "number_of_days_deyal_after_previous_email",
+            "type": "number",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a4f62f4dbb35",
+                        "operator": "==",
+                        "value": "YES"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "mail-template"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1520587114
+}

@@ -1,0 +1,110 @@
+@media only screen and (min-width:768px) {
+   header .navMain ul{display: block !important;}
+}
+
+
+@media only screen and (max-width: 1199px) {
+  
+}
+
+@media only screen and (max-width: 991px) {
+    .navMain nav ul li a {font-size: 15px;padding: 25px 23px;}
+    .navMain nav ul li a:before {left: 11px;}
+    .innerPro h2 {font-size: 60px;line-height: 60px;margin-bottom: 50px;}
+    .btnMain {padding: 7px 0;font-size: 20px;width: 150px;margin: 0 20px;}
+    
+    
+    .processSteps li {
+    font-size: 24px;
+    line-height: 24px;
+}
+   
+    .processSteps ul li span {
+    font-size: 20px;
+}
+
+    
+    
+}
+@media only screen and (max-width:700px) {
+    .startPro {
+
+    min-height: calc(100vh - 55px);
+}
+    .myAgesteps .innerPro {
+    margin-top: 50px;
+}
+}
+@media only screen and (max-width:767px) {
+.mobile-toggles {position: absolute;top:15px;right: 15px;}
+    .one,.two,.three {background-color: #e2b30d;height: 2px;margin: 4px 0;-webkit-transition: all 0.4s ease 0s;transition: all 0.4s ease 0s;display: table;border-radius: 5px;}
+    .one {width: 23px;}
+    .two {width: 17px;margin-left:}
+    .three {width: 23px;width: 23px;}
+    .open .three {-webkit-transform: rotate(45deg) translate(-2px, -7px);transform: rotate(45deg) translate(-2px, -7px);width: 30px;}
+    
+    .open .two {opacity: 0;}
+    .open .one {-webkit-transform: rotate(-45deg) translate(-2px, 6px);transform: rotate(-45deg) translate(-2px, 6px);width: 30px;}
+    header .navMain ul{display: none;}
+    header .logoMain {padding-top: 0;}
+    header {padding: 10px 0;}
+    .imgStory {max-width: 300px;margin: 0 auto;}
+    .navMain nav ul li a:hover:after{display: none;}
+    header .navMain {float: left;width: 100%; -webkit-transition: 300ms all; transition: 300ms all;}
+    header .logoMain {padding-top: 0;width: 100%;}
+    header .navMain nav ul li:before, .navMain nav ul li:last-child:after {width: 100%;position: absolute;-webkit-transform: none;transform: none;height: 1px;left: 0;}
+    .open header .navMain{padding-top: 10px;}
+    .open header {padding-bottom: 0}
+    header .navMain nav ul li a:before {left: 10px;}
+    header .navMain nav ul li {width: 100%;}
+    .navMain nav ul li a {padding: 10px 25px;}
+    .navMain nav ul li a:hover {color: #e4b30e;}
+    .navMain nav ul li a:hover:before {background: #e2b30d;}
+    
+    .navMain {float: none;}
+    .myStore .row {padding-bottom: 15px;}
+    
+    .myStore {padding: 30px 0;text-align: center;}
+    .startProBottom.parallax-window {min-height: 400px;}
+    .titleMain {font-size: 30px;line-height: 30px; padding: 20px 0;}
+    .innerPro h2 {font-size: 25px;line-height: 25px;margin-bottom: 25px;}
+    .delStory ul li h2 {font-size: 30px;}
+    .mystTag {margin-bottom: 10px;}
+    .delStory {margin-left: 0;}
+    .myStore .row:nth-child(2n) .delStory {margin-right: 0;}
+    .delStory li span {font-size: 20px;}
+    .delStory li {display: block;padding: 5px 0;}
+    .btnMain {padding: 7px 0;font-size: 15px;width: 133px;margin: 0 10px;}
+    footer .navMain nav ul li:before, footer .navMain nav ul li:last-child:after{display: none;}
+    footer{text-align: center; padding: 15px 0;}
+    footer .navMain nav ul li a {padding: 10px 23px 0;}
+    footer .navMain nav ul li {display: inline-block;width: 100%;}
+    footer .logoMain {float: none;padding-top: 0;}
+    footer .navMain nav ul li a:before{display: none;}
+    
+
+    .innerPro ul.ageRange li {padding: 10px 0;width: 130px;margin: 0 16px 32px;font-size: 17px;}
+    .processSteps li {font-size: 16px;line-height: 16px;width: 50%;display: block;text-align: left;margin-bottom: 15px;float: left;}
+    .processSteps {padding: 13px 0 0;}
+    
+    .innerPro ul li {
+    margin: 10px 0;
+}
+    .innerPro .bodyType li {
+    width: 100%;
+    font-size: 15px;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+@media only screen and (max-width:480px) {
+    .innerPro ul.ageRange li {width: 100%;max-width: 100px;}
+    
+}

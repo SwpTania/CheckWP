@@ -1,0 +1,360 @@
+@media only screen and (min-width:768px) {
+   header .navMain ul{display: block !important;}
+   header { position:absolute}
+   header.sticky {position: fixed}
+	body { padding-top: 86px !important}
+}
+@media only screen and (max-width: 1415px) {
+    .container-fluid {max-width: 1200px;}
+}
+
+@media only screen and (max-width: 1199px) {
+    .sticky:after {position: absolute;bottom: -5px;width: 100%;height: 2px;content: "";background: #e2b30d;}
+    .container-fluid {max-width: 960px;}
+    .innerPro .goalType li {width: 38%; }
+    .memList > ul > li {padding: 0 12px;}
+    .memBottomProcess h4 {font-size: 58px;line-height: 58px;}
+    .memBottomProcess ul li {font-size: 25px;}        
+    .memBottomProcess ul {padding-left: 150px;}
+    .memCharge h4 {font-size: 30px;line-height: 30px;}
+    .notCnt {font-size: 16px;}   
+    .memcharInner h5 {font-size: 20px;line-height: 20px;}
+    .memchargeList {width: 290px;}
+    .memInfoRight h3 {font-size: 27px;}
+    .processSteps li {width: 23.7%;font-size: 35px;}
+    
+    .memListUl {width: 300px;}
+    .planCost {font-size: 38.13px;}
+    .planName {font-size: 65px;}
+    
+    .chooseRight {width: 395px;}
+    .chooseRight label {font-size: 50px;}
+    .chooseRight h3 span {top: -3px;}
+    .exDateIn {max-width: 283px;}
+    .listInput .exDateIn .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 100px;
+}
+    .exDateIn {
+    max-width: 239px;
+}
+    .cvvNo {
+    padding-left: 20px;
+}
+    
+    .btnCheckOut {
+    text-align: center;
+    clear: both;
+}
+    
+}
+@media only screen and (max-width: 991px) {
+    
+    
+    .plan_details span {font-size: 19px;}
+    .memBottomProcess h4 {font-size: 49px;line-height: 49px;}
+    .container-fluid {max-width: 750px;}
+    .memBottomProcess ul {padding-left: 50px;padding-bottom: 30px;}
+    .memBottomProcess ul li:before {height: 50px;width: 50px;left: -70px;line-height: 46px;top:1;}
+    .memchargeList {margin-top: 22px;}
+    .mystryLeft {width: 240px;margin-right: 0;}
+    .memBottomProcess ul li {font-size: 20px;line-height: 60px;}
+    .navMain nav ul li a {font-size: 15px;padding: 26px 11px 26px 43px;}
+    .navMain nav ul li a:before {left: 25px;}
+    .innerPro h2 {font-size: 60px;line-height: 60px;margin-bottom: 50px;}
+    .btnMain {padding: 7px 0;font-size: 20px;width: 150px;margin: 0 20px;}
+    .processSteps li {font-size: 24px;line-height: 24px;}
+    .processSteps ul li span {font-size: 20px;}
+    
+    .myStore .row:nth-child(2n) .mystryLeft {width: 55%;}
+    .memInfoRight h3 {font-size: 20px;line-height: 20px;}
+    .memInfoRight h3:after, .memInfoRight h3:before {height: 17px;top: 3px;}
+    .memInfoRight ul li {font-size: 16px;padding-top: 10px;}
+    .memInfoInnerRight {min-height: 240px;}
+    .memInfoLeftBottom h3 {font-size: 33px;}    
+    .planName {font-size: 45px;line-height: 45px;}
+    .memList > ul > li:first-child:after {top: 8px;}
+    .planCost p {font-size: 15.87px;line-height: 10px;}
+    .planCost {font-size: 32.13px;line-height: 25px;top: 8px;}
+    .planCost small {font-size: 15px;top: -14px;}
+    .planWeek {line-height: 19px;font-size: 13px;margin-top: 1px;}
+    .memList > ul > li:after {height: 48px;top: -3px;}
+    .btnbyNow {font-size: 29.15px;}.memInfo {margin-top: 30px;  }
+    
+    .memListUl {width: 225px;}
+    .planCost {font-size: 24.13px;margin-right: 18px;}
+    .planCost:after {height: 60px;right: -10px;}
+    .memListUl:before {height: 60px;top: 2px;}
+    .planName {font-size: 45px;line-height: 45px;top: 8px;}
+    
+    
+    .innerForm .col-md-12{clear: both;}
+    .headingTop h4 {
+    font-size: 25px;
+        margin-bottom: 20px;}
+        .headingTop h4 span {
+    font-size: 18px;
+}
+    .listInput label {
+    font-size: 16px;
+}
+    
+    .monDay {
+    font-size: 16.87px;
+}
+    
+    .actPrice {
+    font-size: 32.13px;
+    margin-right: 0;
+}
+    .disPrice {
+    font-size: 35.13px;
+    margin-left: 0;
+    margin-right: 0;
+}
+    
+.listInput .exDateIn .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 90px;
+}
+    .exDateIn {
+    max-width: 212px;
+}
+    .chooseRight {
+		width: 315px;
+		padding: 0;
+		float: none;
+		display: table;
+		margin: 0 auto;
+	}
+	.monthChoose { display: block}
+	.chooseRight { white-space: inherit}
+    .cvvNo {
+    max-width: 91px;
+}
+    .chooseLeft {
+    float: none;
+    margin-bottom: 20px;
+}
+    [type="checkbox"]:not(:checked) + label, [type="checkbox"]:checked + label {
+    font-size: 15px;
+}
+    
+    
+    
+}
+@media only screen and (max-width: 1023px) {
+    .processSteps{top: -1px;}
+    .memBottomProcess ul {padding-left: 70px;}
+    .innerPro ul.goalType {
+    margin-bottom: 150px;
+}
+    
+}
+@media only screen and (max-width:700px) {
+    .startPro {min-height: calc(100vh - 55px);}
+    .myAgesteps .innerPro {margin-top: 50px;}
+}
+@media only screen and (max-width:767px) {
+    actPrice {
+    font-size: 19px !important;
+}
+    .plan_details span {
+    font-size: 14px;
+}
+    .plan_details label {
+    width: 130px;
+    font-size: 15px;}
+    .memListUl {
+    float: none ;
+    margin-top: 0;
+        }
+.memListUl li span {
+    top: -6px;
+    font-size: 16px;
+    left: -9px;
+}
+    #myModal .modal-title {font-size: 24px;padding:15px;}
+    #myModal button.default-btn#check_coupon {width: 100%;white-space: inherit;font-size: 15px;}
+    .customHead h2 { display: block}
+	.navMain nav h2 { display: none} 
+	.innerForm .col-md-6 + .col-md-6 .headingTop { margin-top: 40px}
+	.listInput > .termsNote { padding: 10px 16px;}
+    .planName {font-size: 30px;line-height: 30px;top: 8px;width: 100%;}
+    .memListUl:before, .planCost:after{display: none;}
+    .memListUl {width: 100%;float: none;max-width: 100% !important;}
+    .memListUl li {float: none;text-align: center;}
+.memListUl li {
+    float: none;
+    text-align: center;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 25px !IMPORTANT;
+    margin-left: 10px !important;
+}
+.memListUl {
+    width: 100%;
+    float: none;
+    max-width: 100% !important;
+    text-align: center !important;
+    margin: 0 !Important;
+}
+    
+    .listMemberPlan {margin-top: 15px;}
+    .memList > ul > li:after{display: none;}
+    .innerPro .goalType li {width: 100%;margin: 10px; padding: 10px;}
+    .mystryLeft {width: 100%;margin: 0;}
+    .mystryRight {margin: 0;width: 100%;}
+    .myStore .row:nth-child(2n) .mystryLeft {width: 100%;}
+    .mobile-toggles {position: absolute;top:15px;right: 15px;}
+    .one,.two,.three {background-color: #e2b30d;height: 2px;margin: 4px 0;-webkit-transition: all 0.4s ease 0s;transition: all 0.4s ease 0s;display: table;border-radius: 5px;}
+    .one {width: 23px;}
+    .two {width: 17px;}
+    .three {width: 23px;width: 23px;}
+    .open .three {-webkit-transform: rotate(45deg) translate(-2px, -7px);transform: rotate(45deg) translate(-2px, -7px);width: 30px;}
+    
+    .open .two {opacity: 0;}
+    .open .one {-webkit-transform: rotate(-45deg) translate(-2px, 6px);transform: rotate(-45deg) translate(-2px, 6px);width: 30px;}
+    header .navMain ul{display: none;}
+    header .logoMain {padding-top: 0;}
+    header {padding: 10px 0;}
+    .imgStory {max-width: 300px;margin: 0 auto;}
+    .navMain nav ul li a:hover:after{display: none;}
+    header .navMain {float: left;width: 100%; -webkit-transition: 300ms all; transition: 300ms all;}
+    header .logoMain {padding-top: 0;width: 100%;}
+    header .navMain nav ul li:before, .navMain nav ul li:last-child:after {width: 100%;position: absolute;-webkit-transform: none;transform: none;height: 1px;left: 0;}
+    .open header .navMain{padding-top: 10px;}
+    .open header {padding-bottom: 0}
+    header .navMain nav ul li a:before {left: 10px;}
+    header .navMain nav ul li {width: 100%;}
+    .navMain nav ul li a {padding: 10px 25px;}
+    .navMain nav ul li a:hover {color: #e4b30e;}
+    .navMain nav ul li a:hover:before {background: #e2b30d;}
+    .navMain {float: none;}
+    .myStore .row {padding-bottom: 15px;}
+    .myStore {padding: 30px 0;text-align: center;}
+    .startProBottom.parallax-window {min-height: 400px;}
+    .titleMain {font-size: 30px;line-height: 30px; padding: 20px 0;}
+    .innerPro h2 {font-size: 25px;line-height: 25px;margin-bottom: 25px;}
+    .delStory ul li h2 {font-size: 30px;}
+    .mystTag {margin-bottom: 10px;}
+    .delStory {margin-left: 0;}
+    .myStore .row:nth-child(2n) .delStory {margin-right: 0;}
+    .delStory li span {font-size: 20px;}
+    .delStory li {display: block;padding: 5px 0;}
+    .btnMain {padding: 7px 0;font-size: 15px;width: 133px;margin: 0 10px;}
+    footer .navMain nav ul li:before, footer .navMain nav ul li:last-child:after{display: none;}
+    footer{text-align: center; padding: 15px 0;}
+    footer .navMain nav ul li a {padding: 10px 23px 0;}
+    footer .navMain nav ul li {display: inline-block;width: 100%;}
+    footer .logoMain {float: none;padding-top: 0;}
+    footer .navMain nav ul li a:before{display: none;}
+    
+    .innerPro ul.ageRange li {padding: 10px 0;width: 130px;margin: 0 16px 32px;font-size: 17px;}
+    .processSteps li {font-size: 16px;line-height: 16px;width: 50%;display: block;text-align: left;margin-bottom: 15px;float: left;}
+    .processSteps {padding: 13px 0 0;}
+    .innerPro ul li {margin: 10px 0;font-size: 16px;    padding: 9px 0px;}
+    .innerPro .bodyType li {width: 100%;font-size: 15px; margin: 10px; padding: 10px;}
+    .startPro {min-height: calc(100vh - 55px);}
+    
+    .memInfoLeft {max-width: 100%;float: none;}
+    .memInfoRight {float: none;width: 100%;margin-top: 15px;}
+    .memInfoLeftBottom h3 {font-size: 20px;}
+    .memInfoLeftBottom {margin-top: 15px;}.memInfoRight h3 {display: inline-block;}    
+    .memInfoRight h3:before {right: -15px;}
+    .btnbyNow {font-size: 25px;}
+    .listMemberPlan {max-width: 100%;padding: 5px 15px 15px;}
+    .memInfoRight h3:after {left: -15px;}
+    .planCost p {line-height: inherit;display: inline-block;clear: right;vertical-align: top;}
+    .memList > ul > li {padding: 0 12px;width: 100%;display: block;margin: 0 auto;text-align: center !important;}
+    .planCost {font-size: 30px !important;}
+    .memList > ul > li:first-child {padding-left: 12px;font-size: 30px;}
+    .planWeek {padding-top: 12px !important;line-height: 23px;}
+    .btnView {display: block;}
+    
+    .memBottomProcess h4 {font-size: 28px;line-height: 35px;margin-bottom: 28px;}
+    .memBottomProcess ul li:before {height: 30px;width: 30px;left: -40px;line-height: 23px;top: 1px;}
+    .memBottomProcess {padding-top: 30px;}
+    .memchargeList {width: 100%;padding: 0;margin: 0 0 15px 0;}
+    .memBottomProcess ul {padding-left: 40px;padding-bottom: 30px;}
+    .innerPro .memBottomProcess li {line-height: inherit;}
+    .startPro.resultsPage:after {height: 1200px;z-index: 1}
+        
+    .listImg {max-width: 200px;float: none;width: 100%;margin: 0 auto;}
+    .listCnt {margin-left: 0;}
+    .ourlists {margin-bottom: 50px;;text-align: center;}
+    .listCnt h4 {font-size: 25px;line-height: 25px;}
+    .timenowBtn {font-size: 30px;line-height: 30px;margin-bottom: 45px;}
+    
+    
+    .contactForm h3 {font-size: 35px;line-height: 35px;text-align: center;}
+    .contactForm {padding: 10px 15PX 15px;}
+    .inputDesk {margin-top: 15px;}
+    .btnSub {margin-top: 11px;}
+    
+    .inputDesk input, .inputDesk textarea {padding: 15px 15px;font-size: 15px;}
+    .btnSub input {padding: 15px;font-size: 20px;width: 100%;}
+    .startPro.myAgesteps{min-height:-ms-calc(100vh - 55px);min-height:-o-calc(100vh - 55px);min-height:calc(100vh - 55px);}
+    .startPro.myContact {min-height: -os-calc(100vh -55px);min-height: -o-calc(100vh - 55px);min-height: calc(100vh - 55px);}
+    
+    
+    .chooseLeft h4 {
+    font-size: 30px;
+}
+    .chooseLeft h5 {
+    font-size: 20px;
+}
+    .chooseRight h3 {
+    padding: 7px 17px;
+    float: none;
+}
+    
+    .chooseRight {
+    max-width: 110px;
+}
+    .monthChoose {
+    position: static;
+    text-align: center;
+}
+  .bootstrap-select.btn-group .dropdown-toggle .filter-option {
+    font-size: 14px;
+} 
+    .listInput input, .bootstrap-select>.dropdown-toggle {
+    padding: 11.5px 15px;
+}
+    .listInput {
+    margin-bottom: 15px;
+}
+    .innerForm {
+    padding: 15px;
+    margin-bottom: 30px;
+}
+    .headingTop h4 {
+    text-align: center;
+}
+    .headingTop h4 span {
+    padding-left: 0;
+}
+    .listInput .exDateIn .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 100%;
+    margin: 0;
+}
+    .exDateIn {
+    max-width: 100%;
+    width: 100%;
+}
+    .cvvNo {
+    max-width: 100%;
+    padding: 0;
+    margin-top: 15px;
+    width: 100%;
+}
+    
+}
+
+@media only screen and (max-width:480px) {
+    .innerPro ul.ageRange li {width: 100%;max-width: 100px;}
+	.checkout_full_name .listInput { width: 100%} 
+	.listInput > .termsNote {position: static;margin-bottom: 10px}
+	.listInput.termsNote { padding-left: 0}
+    .listInput.termsNote > label {left: 0;}
+    
+}
